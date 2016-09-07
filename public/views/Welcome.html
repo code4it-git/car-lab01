@@ -1,0 +1,16 @@
+<div>
+    <a ui-sref='car'> Go to Administration</a>
+    <h2>{{message.title}}</h2>
+</div>
+<p>{{message.message}}</p>
+
+<div class="container-fluid">
+<div  class="row" ng-repeat="x in cars">
+    <div class="col-md-1">{{x.id}}</div>
+    <div class="col-md-1">{{x.type}}</div>
+    <div class="col-md-1">{{x.color}}</div>
+    <div class="col-md-1" >{{x.year}}</div>
+    <div class="col-md-1"><input type="button" value="Delete"  class="btn btn-danger" ng-click="deleteCar(x.id)"></div>
+    <div class="col-md-1"><input type="button" value="Update" class="btn btn-warning" ng-click="updateCar(x)"></div>
+</div>
+</div>

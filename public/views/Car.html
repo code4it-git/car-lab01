@@ -1,0 +1,29 @@
+<div>
+    <h1>Car Creation</h1>
+    <div class="alert alert-danger">
+    <strong >View for create cars </strong>
+    </div>
+    <form name="carForm" novalidate ng-submit="saveCar(car)">
+    <p>
+        <label> ID </label> <input type="text" name="id" ng-model="car.id" required >
+
+
+    </p>
+    <p>
+        <label> Type </label> <input type="text" name="type" ng-model="car.type" required>
+        
+
+    </p>
+    <p>
+        <label> Color </label> <input type="text" name="color" ng-model="car.color" required>
+        
+
+    </p>
+    <p>
+        <label> Year </label> <input type="number" name="year" ng-model="car.year" >
+        
+
+    </p>
+    <input class="btn btn-lg btn-primary" value="Save" type="submit" ng-disabled="carForm.$invalid">
+    </form>
+</div>

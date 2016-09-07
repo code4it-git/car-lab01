@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Code4IT Car Dealer</title>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap core CSS -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- angular -->
+<script src="js/lib/angular.min.js"></script>
+<script src="js/lib/angular-ui-router.min.js"></script>
+
+<!-- references -->
+<script src="js/app.js"></script>
+<!-- services -->
+<script src="js/service/CarService.js"></script>
+<!-- controllers -->
+<script src="js/controllers/CarController.js"></script>
+<script src="js/controllers/WelcomeController.js"></script>
+</head>
+<body ng-app="app">
+    <div class="jumbotron">
+        <div class="container">
+    <h1>Code4IT Car Dealer</h1>
+    <p>Welcome to the Code4IT Car Example</p>
+        </div>
+    </div>
+    <div ui-view > </div>
+</body>   
+
+</html>   
